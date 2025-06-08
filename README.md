@@ -1,6 +1,6 @@
 # **print-cheat-android**
 
-A **print exploit** for **Roblox Android (ARM64)** with updated addresses for **version 666**. 🚀
+A **print exploit** for **Roblox Android (ARM64)** with updated addresses for **version 673**. 🚀
 
 ## **🔧 How to Build**
 Compiling this is straightforward—just follow these steps:
