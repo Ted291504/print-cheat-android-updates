@@ -31,8 +31,8 @@ auto init::start() -> void
 {
 	__android_log_print(ANDROID_LOG_INFO, "PRINT-CHEAT", "init::start called");
 
-	r_print = reinterpret_cast<decltype(r_print)>(memory::rebaseAddress(0x45B9E30)); // 2.673.1715
-	const auto game = reinterpret_cast<void*>(memory::rebaseAddress(0x2666020)); // STILL ON 666 WILL UPDATE LATER
+	r_print = reinterpret_cast<decltype(r_print)>(memory::rebaseAddress(0x39319C8)); // 2.684.688
+	const auto game = reinterpret_cast<void*>(memory::rebaseAddress(0x2284270)); // 2.684.688
 
 	A64HookFunction(reinterpret_cast<void*>(game), reinterpret_cast<void*>(&hook_game), reinterpret_cast<void**>(&original_game));
 }
