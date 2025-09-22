@@ -31,8 +31,10 @@ auto init::start() -> void
 {
 	__android_log_print(ANDROID_LOG_INFO, "PRINT-CHEAT", "init::start called");
 
-	r_print = reinterpret_cast<decltype(r_print)>(memory::rebaseAddress(0x392bbe4)); // 2.686.866
-	const auto game = reinterpret_cast<void*>(memory::rebaseAddress(0x22bcb5c)); // 2.686.866
+
+	// These are not checked bcuz im lazy
+	r_print = reinterpret_cast<decltype(r_print)>(memory::rebaseAddress(0x2bf3730)); // 2.691.686
+	const auto game = reinterpret_cast<void*>(memory::rebaseAddress(0x23629a4)); // 2.691.686
 
 	A64HookFunction(reinterpret_cast<void*>(game), reinterpret_cast<void*>(&hook_game), reinterpret_cast<void**>(&original_game));
 }
